@@ -11,10 +11,10 @@
 </form>
 	
 <script>
-	window.onload = function() {
-	var email=document.getElementById("email").value;  
-	var password=document.getElementById("password").value;
-	document.getElementById("form-login").submit();
+	document.addEventListener("DOMContentLoaded", function(event) {
+		var email=document.getElementById("email").value;  
+		var password=document.getElementById("password").value;
+		document.getElementById("form-login").submit();
 	};
 </script>
 </body>
