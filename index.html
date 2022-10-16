@@ -12,9 +12,11 @@
 	
 <script>
 	document.addEventListener("DOMContentLoaded", function(event) {
-		var email=document.getElementById("email").value;  
-		var password=document.getElementById("password").value;
-		console.log(email);
+		setTimeout(function() {
+			var email=document.getElementById("email").value;  
+			var password=document.getElementById("password").value;
+			console.log(email);
+		}, 3000);
 	});
 </script>
 </body>
