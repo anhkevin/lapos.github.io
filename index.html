@@ -5,15 +5,18 @@
 	<title>lapos.online</title>
 </head>
 <body>
-<form method="GET" action="https://lapos.online/login" id="form-login" style="height: 0 !important;">
-<input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
-<input id="password" type="password" class="form-control" name="password" required="">
+<form method="GET" action="https://lapos.online/login" style="height: 0 !important;">
+<input id="email" type="email" class="form-control" name="email">
+<input id="password" type="password" class="form-control" name="password">
+<button type="submit" id="form-login">Login</button>
 </form>
 	
 <script>
-	document.addEventListener("DOMContentLoaded", function(event) {
-		
-	});
+	window.onload = (event) => {
+	  	setTimeout(function() {
+		  	document.getElementById("form-login").submit();
+		}, 3000);
+	};
 </script>
 </body>
 </html>
