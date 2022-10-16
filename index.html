@@ -13,10 +13,10 @@
 	
 <script>
 	window.onload = (event) => {
+		document.getElementById("email").click();
+		document.getElementById("email").focus();
+		document.getElementById("email").select();
 	  	setTimeout(function() {
-			document.getElementById("email").click();
-			document.getElementById("email").focus();
-			document.getElementById("email").select();
 		  	document.getElementById("form-login").click();
 		}, 3000);
 	};
