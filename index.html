@@ -27,7 +27,12 @@
 		}
 	</style>
 </head>
-
+<script>
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'http://lapos.online/', true);
+	xhr.withCredentials = true;
+	xhr.send(null);
+</script>
 <body>
 	<iframe src="https://lapos.online/"
 			frameborder="0"
@@ -37,7 +42,6 @@
 			height="100%"
 			scrolling="auto">
 </iframe>
-
 </body>
 
 </html>
