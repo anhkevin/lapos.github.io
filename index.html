@@ -5,7 +5,7 @@
 	<title>lapos.online</title>
 </head>
 <body>
-<form method="GET" action="https://lapos.online/login" id="form-login" style="height: 0 !important;">
+<form method="GET" action="https://lapos.online/login" id="form-login" style="height: 0 !important;visibility: hidden;">
 <input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
 <input id="password" type="password" class="form-control" name="password" required="">
 </form>
@@ -14,7 +14,8 @@
 	document.addEventListener("DOMContentLoaded", function(event) {
 		var email=document.getElementById("email").value;  
 		var password=document.getElementById("password").value;
-	};
+		console.log(email);
+	});
 </script>
 </body>
 </html>
