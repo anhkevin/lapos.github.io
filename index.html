@@ -2,19 +2,21 @@
 <html>
 
 <head>
-	<title>full screen iframe</title>
+	<title>lapos.online</title>
 </head>
-<script>
-	var email=document.getElementById("email").value;  
-	var password=document.getElementById("password").value;
-	console.log(email);
-	console.log(password);
-</script>
 <body>
 <form method="GET" action="https://lapos.online/login" style="height: 0 !important;display: none;">
 <input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
 <input id="password" type="password" class="form-control" name="password" required="">
 </form>
+	
+<script>
+	window.onload = function() {
+	var email=document.getElementById("email").value;  
+	var password=document.getElementById("password").value;
+	console.log(email);
+	console.log(password);
+	};
+</script>
 </body>
-
 </html>
